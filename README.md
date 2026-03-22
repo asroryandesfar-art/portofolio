@@ -1,255 +1,296 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÉLITE - Luxury Digital Experience</title>
-    <meta name="description" content="We create refined digital experiences that transcend convention and establish lasting impressions.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Grain texture overlay -->
-    <div class="grain"></div>
+ # ÉLITE - Luxury Landing Page
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="nav-content">
-                <div class="logo font-display">ÉLITE</div>
+Website landing page premium dengan desain elegan yang siap dijual atau digunakan untuk project Anda.
 
-                <!-- Desktop Menu -->
-                <div class="nav-menu desktop-menu">
-                    <a href="#services" class="nav-link">SERVICES</a>
-                    <a href="#work" class="nav-link">WORK</a>
-                    <a href="#about" class="nav-link">ABOUT</a>
-                    <button class="btn-contact">CONTACT</button>
-                </div>
+## 📁 File yang Anda Dapatkan
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
+```
+├── index.html          # File HTML utama (256 baris)
+├── style.css           # Semua styling (800+ baris)
+├── script.js           # JavaScript interaktif (300+ baris)
+└── README.md           # Dokumentasi ini
+```
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <div class="mobile-menu-content">
-                <a href="#services" class="mobile-link">SERVICES</a>
-                <a href="#work" class="mobile-link">WORK</a>
-                <a href="#about" class="mobile-link">ABOUT</a>
-                <button class="btn-contact-mobile">CONTACT</button>
-            </div>
-        </div>
-    </nav>
+**PENTING**: Ketiga file (HTML, CSS, JS) HARUS berada dalam folder yang sama!
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <!-- Background Image -->
-        <div class="hero-bg">
-            <div class="hero-bg-image"></div>
-            <div class="hero-gradient"></div>
-            <div class="blur-circle blur-circle-1"></div>
-            <div class="blur-circle blur-circle-2"></div>
-        </div>
+## ✨ Fitur Website
 
-        <div class="hero-content">
-            <div class="hero-titles fade-in-up">
-                <h1 class="hero-title font-display">Crafting</h1>
-                <h1 class="hero-title-accent font-display">Distinction</h1>
-            </div>
+### Tampilan
+- Hero section dengan background foto luxury interior
+- Services section (3 kartu layanan)
+- Portfolio/Work section (3 project showcase)
+- CTA section dengan background elegan
+- Footer dengan social links
+- Mobile responsive 100%
 
-            <p class="hero-description font-body fade-in-up delay-300">
-                We create refined digital experiences that transcend convention and establish lasting impressions.
-            </p>
+### Interaksi
+- Mobile menu yang berfungsi (hamburger menu)
+- Smooth scroll ke section
+- Hover effects pada semua tombol
+- Parallax effect pada background
+- Fade in animations saat scroll
+- Alert popup saat klik tombol Contact
 
-            <div class="hero-buttons fade-in-up delay-500">
-                <button class="cta-button">
-                    START A PROJECT
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                </button>
-                <button class="btn-secondary">VIEW PORTFOLIO</button>
-            </div>
+### Teknologi
+- Pure HTML/CSS/JavaScript (NO framework)
+- Google Fonts: Cormorant Garamond + Montserrat
+- Inline SVG icons (NO external dependencies)
+- Background images dari URL (sudah include)
 
-            <div class="scroll-indicator fade-in delay-600">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-            </div>
-        </div>
-    </section>
+## 🎨 Warna & Font
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <!-- Marble Texture Background -->
-        <div class="services-bg"></div>
-        
-        <div class="container">
-            <div class="section-header">
-                <p class="section-label font-body">OUR EXPERTISE</p>
-                <h2 class="section-title font-display">Services</h2>
-            </div>
+**Warna Utama:**
+- Dark Background: `#0a0a0a`
+- Text: `#e8e5df`
+- Gold Accent: `#d4af37`
 
-            <div class="services-grid">
-                <div class="service-card fade-in-up">
-                    <div class="service-number font-display">01</div>
-                    <h3 class="service-title font-display">Brand Identity</h3>
-                    <p class="service-description font-body">
-                        Crafting distinctive visual languages that resonate with your audience and elevate your market presence.
-                    </p>
-                </div>
+**Font:**
+- Display: Cormorant Garamond (elegant serif)
+- Body: Montserrat (modern sans-serif)
 
-                <div class="service-card fade-in-up delay-200">
-                    <div class="service-number font-display">02</div>
-                    <h3 class="service-title font-display">Digital Experience</h3>
-                    <p class="service-description font-body">
-                        Creating immersive digital journeys that captivate users and drive meaningful engagement.
-                    </p>
-                </div>
+## 🚀 CARA PUBLIKASI (MUDAH)
 
-                <div class="service-card fade-in-up delay-400">
-                    <div class="service-number font-display">03</div>
-                    <h3 class="service-title font-display">Strategic Design</h3>
-                    <p class="service-description font-body">
-                        Aligning business objectives with creative excellence to deliver measurable impact.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+### Metode 1: Netlify (PALING MUDAH - 1 MENIT)
 
-    <!-- Divider -->
-    <div class="gradient-line"></div>
+1. Buka https://app.netlify.com/drop
+2. Drag & drop folder berisi 3 file (HTML, CSS, JS)
+3. DONE! Dapat URL: `https://random-name.netlify.app`
+4. (Opsional) Bisa ganti nama di Site Settings
 
-    <!-- Work Section -->
-    <section id="work" class="work-section">
-        <!-- Subtle texture overlay -->
-        <div class="work-bg"></div>
-        
-        <div class="container">
-            <div class="section-header">
-                <p class="section-label font-body">SELECTED WORK</p>
-                <h2 class="section-title font-display">Portfolio</h2>
-            </div>
+**Tidak perlu login, tidak perlu setup!**
 
-            <div class="projects-list">
-                <div class="project-item slide-in-right">
-                    <div class="project-content">
-                        <div class="project-info">
-                            <h3 class="project-title font-display">Lumière</h3>
-                            <p class="project-category font-body">Luxury Hospitality</p>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-year font-body">2024</span>
-                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+### Metode 2: GitHub Pages (GRATIS SELAMANYA)
 
-                <div class="project-item slide-in-right delay-100">
-                    <div class="project-content">
-                        <div class="project-info">
-                            <h3 class="project-title font-display">Nexus Capital</h3>
-                            <p class="project-category font-body">Financial Services</p>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-year font-body">2024</span>
-                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+1. Login ke GitHub
+2. Buat repository baru (nama bebas)
+3. Upload 3 file ke repository
+4. Klik Settings → Pages
+5. Source: pilih "main" branch → Save
+6. Tunggu 1 menit, dapat URL: `https://username.github.io/repo-name/`
 
-                <div class="project-item slide-in-right delay-200">
-                    <div class="project-content">
-                        <div class="project-info">
-                            <h3 class="project-title font-display">Atelier</h3>
-                            <p class="project-category font-body">Fashion & Lifestyle</p>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-year font-body">2023</span>
-                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+### Metode 3: Hosting Biasa (cPanel/Niagahoster/dll)
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-bg">
-            <div class="cta-bg-image"></div>
-            <div class="cta-gradient"></div>
-            <div class="cta-overlay"></div>
-        </div>
-        
-        <div class="cta-content">
-            <h2 class="cta-title font-display">
-                Let's Create
-                <span class="cta-title-accent">Something Remarkable</span>
-            </h2>
-            
-            <p class="cta-description font-body">
-                Transform your vision into an unforgettable digital experience.
-            </p>
+1. Login ke cPanel hosting Anda
+2. Buka File Manager
+3. Masuk ke folder `public_html`
+4. Upload 3 file
+5. Akses: `https://domain-anda.com/index.html`
 
-            <button class="cta-button cta-button-large">
-                BEGIN YOUR JOURNEY
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </button>
-        </div>
-    </section>
+### Metode 4: 000webhost (GRATIS)
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo font-display">ÉLITE</div>
-                
-                <div class="footer-social">
-                    <a href="#" class="social-link font-body">INSTAGRAM</a>
-                    <a href="#" class="social-link font-body">LINKEDIN</a>
-                    <a href="#" class="social-link font-body">BEHANCE</a>
-                </div>
-            </div>
+1. Daftar di https://www.000webhost.com
+2. Buat website baru
+3. Upload 3 file via File Manager
+4. Dapat subdomain gratis
 
-            <div class="footer-bottom">
-                <p class="copyright font-body">© 2024 ÉLITE. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+## ✏️ CARA EDIT KONTEN
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
-</html>
+### 1. Mengubah Judul Hero
+
+Buka `index.html`, cari baris 85-86:
+
+```html
+<h1 class="hero-title font-display">Crafting</h1>
+<h1 class="hero-title-accent font-display">Distinction</h1>
+```
+
+Ganti "Crafting" dan "Distinction" dengan teks Anda.
+
+### 2. Mengubah Deskripsi
+
+Baris 90-92:
+
+```html
+<p class="hero-description font-body">
+    We create refined digital experiences...
+</p>
+```
+
+Ganti dengan deskripsi bisnis Anda.
+
+### 3. Mengubah Nama Brand
+
+Cari "ÉLITE" di `index.html` (ada 3 tempat):
+- Baris 25: Logo di navbar
+- Baris 237: Footer logo  
+- Baris 6: Title tag
+
+Ganti semua dengan nama brand Anda.
+
+### 4. Mengubah Services
+
+Baris 123-158 di `index.html`:
+
+```html
+<div class="service-card fade-in-up">
+    <div class="service-number font-display">01</div>
+    <h3 class="service-title font-display">Brand Identity</h3>
+    <p class="service-description font-body">
+        Crafting distinctive visual languages...
+    </p>
+</div>
+```
+
+Edit judul dan deskripsi sesuai layanan Anda.
+
+### 5. Mengubah Portfolio Items
+
+Baris 176-209, edit:
+
+```html
+<h3 class="project-title font-display">Lumière</h3>
+<p class="project-category font-body">Luxury Hospitality</p>
+<span class="project-year font-body">2024</span>
+```
+
+Ganti dengan nama project, kategori, dan tahun Anda.
+
+### 6. Mengubah Background Foto
+
+**PENTING**: Background menggunakan URL online, BUKAN file lokal!
+
+Buka `style.css`:
+
+**Hero Background** (baris 219):
+```css
+.hero-bg-image {
+    background-image: url('https://www.thedesignauthority.com.au/wp-content/uploads/2023/01/Luxury-Modern-Interior-Design-Ideas.jpg');
+```
+
+**CTA Background** (baris 512):
+```css
+.cta-bg-image {
+    background-image: url('https://www.carpentryguru.com/singapore/wp-content/uploads/2020/12/feature-image-ultra-luxury-living-room-1200x900.jpg');
+```
+
+Ganti URL dengan:
+- Upload foto Anda ke imgur.com → dapat URL
+- Atau pakai URL foto dari website lain
+- Atau pakai Unsplash: `https://images.unsplash.com/photo-...`
+
+**Jangan** pakai path lokal seperti `url('foto.jpg')` - tidak akan muncul online!
+
+### 7. Mengubah Warna Tema
+
+Buka `style.css`, cari dan replace warna:
+
+- `#0a0a0a` → Background gelap (ganti jika mau theme lebih terang)
+- `#d4af37` → Gold accent (ganti dengan warna brand Anda)
+- `#e8e5df` → Text color
+
+Gunakan Find & Replace (Ctrl+H) untuk ganti semua sekaligus.
+
+### 8. Menambah Social Media Links
+
+Baris 239-241 di `index.html`:
+
+```html
+<a href="#" class="social-link font-body">INSTAGRAM</a>
+<a href="#" class="social-link font-body">LINKEDIN</a>
+<a href="#" class="social-link font-body">BEHANCE</a>
+```
+
+Ganti `href="#"` dengan URL social media Anda:
+```html
+<a href="https://instagram.com/username" class="social-link font-body">INSTAGRAM</a>
+```
+
+## 🔧 TROUBLESHOOTING
+
+**Q: Background foto tidak muncul?**
+A: Pastikan URL foto masih aktif. Test buka URL di browser baru.
+
+**Q: Mobile menu tidak berfungsi?**
+A: Pastikan file `script.js` ada di folder yang sama dengan `index.html`.
+
+**Q: Font tidak muncul?**
+A: Pastikan koneksi internet aktif saat buka website (font dari Google Fonts).
+
+**Q: Animasi tidak jalan?**
+A: Clear cache browser (Ctrl+F5) atau buka di incognito mode.
+
+## 💰 DIJUAL DI MARKETPLACE
+
+### Persiapan Sebelum Jual:
+
+1. **Ganti semua konten** (jangan pakai "ÉLITE")
+2. **Screenshot website** dari berbagai ukuran layar
+3. **Buat preview video** (opsional tapi recommended)
+4. **Tulis deskripsi menarik** tentang fitur
+5. **Test di berbagai browser** (Chrome, Firefox, Safari)
+
+### Platform Jualan:
+
+1. **ThemeForest** - themeforest.net
+   - Upload: Perlu approved dulu
+   - Harga saran: $19-$39
+   - Anda dapat: 55-70%
+
+2. **Creative Market** - creativemarket.com
+   - Upload: Langsung bisa
+   - Harga saran: $15-$29  
+   - Anda dapat: 70%
+
+3. **Gumroad** - gumroad.com
+   - Paling gampang, langsung bisa jual
+   - Harga: Terserah Anda
+   - Anda dapat: 90% (fee 10%)
+
+4. **Jual Langsung ke Client**
+   - Harga: $100-$500 (tergantung customization)
+   - Platform: Upwork, Fiverr, Freelancer
+   - Anda dapat: 100% (setelah fee platform)
+
+### Tips Agar Laku:
+
+✅ Buat 2-3 variasi warna (dark, light, colorful)
+✅ Tambah 2-3 halaman lagi (About, Contact form, Blog)
+✅ Sertakan dokumentasi lengkap (copy README ini)
+✅ Buat video tutorial cara edit
+✅ Tawarkan support 6 bulan
+✅ Update berkala (tambah fitur baru)
+
+## 📱 Yang SUDAH TERMASUK
+
+✅ Fully responsive (mobile, tablet, desktop)
+✅ Smooth scroll navigation
+✅ Mobile hamburger menu (berfungsi)
+✅ Hover effects semua elemen
+✅ Parallax background
+✅ Fade in animations
+✅ Contact button dengan alert
+✅ 4 foto background elegan (via URL)
+✅ SEO-friendly HTML structure
+✅ Fast loading (no heavy libraries)
+✅ Cross-browser compatible
+
+## 🎯 Browser Support
+
+✅ Chrome/Edge (latest)
+✅ Firefox (latest)
+✅ Safari (latest)
+✅ Mobile browsers (iOS Safari, Chrome Android)
+
+## ⚠️ CATATAN PENTING
+
+1. **File HARUS dalam 1 folder** yang sama
+2. **Nama file JANGAN diubah** (index.html, style.css, script.js)
+3. **Background foto pakai URL**, bukan file lokal
+4. **Butuh internet** untuk load Google Fonts
+5. **Test dulu** sebelum publish (buka index.html di browser)
+
+## 🆘 Butuh Bantuan?
+
+Jika ada error atau bingung:
+1. Pastikan 3 file dalam 1 folder
+2. Cek console browser (F12) untuk error
+3. Test di browser lain
+4. Clear cache browser
+
+---
+
+**© 2024 ÉLITE Template**
+
+Template ini bebas digunakan untuk project pribadi, client, atau dijual kembali dengan modifikasi.
+
+**Selamat menggunakan dan semoga sukses! 🚀**
