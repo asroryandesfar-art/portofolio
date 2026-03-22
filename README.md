@@ -1,4 +1,4 @@
- # ÉLITE - Luxury Landing Page
+# ÉLITE - Luxury Landing Page
 
 Website landing page premium dengan desain elegan yang siap dijual atau digunakan untuk project Anda.
 
@@ -6,7 +6,7 @@ Website landing page premium dengan desain elegan yang siap dijual atau digunaka
 
 ```
 ├── index.html          # File HTML utama (256 baris)
-├── style.css           # Semua styling (800+ baris)
+├── style.css           # Semua styling (906 baris)
 ├── script.js           # JavaScript interaktif (300+ baris)
 └── README.md           # Dokumentasi ini
 ```
@@ -149,36 +149,72 @@ Ganti dengan nama project, kategori, dan tahun Anda.
 
 **PENTING**: Background menggunakan URL online, BUKAN file lokal!
 
-Buka `style.css`:
+Buka `style.css` dan cari baris berikut:
 
-**Hero Background** (baris 219):
+**Hero Background** (baris 270):
 ```css
 .hero-bg-image {
     background-image: url('https://www.thedesignauthority.com.au/wp-content/uploads/2023/01/Luxury-Modern-Interior-Design-Ideas.jpg');
 ```
 
-**CTA Background** (baris 512):
+**Services Background** (baris 475):
+```css
+.services-bg::before {
+    background-image: url('https://i.pinimg.com/originals/21/85/ac/2185acb38c15e5f40e40e15097cfeae6.jpg');
+```
+
+**Work Background** (baris 596):
+```css
+.work-bg::before {
+    background-image: url('https://img.freepik.com/premium-photo/elegant-marble-texture-background-with-gold-highlights_1198457-28455.jpg');
+```
+
+**CTA Background** (baris 700):
 ```css
 .cta-bg-image {
     background-image: url('https://www.carpentryguru.com/singapore/wp-content/uploads/2020/12/feature-image-ultra-luxury-living-room-1200x900.jpg');
 ```
 
-Ganti URL dengan:
-- Upload foto Anda ke imgur.com → dapat URL
-- Atau pakai URL foto dari website lain
-- Atau pakai Unsplash: `https://images.unsplash.com/photo-...`
+**Cara mengganti:**
+1. Cari nomor baris di atas di file `style.css`
+2. Ganti URL dengan foto Anda sendiri
 
-**Jangan** pakai path lokal seperti `url('foto.jpg')` - tidak akan muncul online!
+**Cara dapat URL foto:**
+- Upload ke imgur.com → copy link
+- Upload ke imgbb.com → copy direct link
+- Pakai Unsplash: `https://images.unsplash.com/photo-id?w=1920`
+- Pakai foto dari website yang sudah ada
+
+**Jangan** pakai path lokal seperti `url('foto.jpg')` atau `url('./images/foto.jpg')` - tidak akan muncul saat online!
 
 ### 7. Mengubah Warna Tema
 
-Buka `style.css`, cari dan replace warna:
+**Cara Tercepat: Find & Replace**
 
-- `#0a0a0a` → Background gelap (ganti jika mau theme lebih terang)
-- `#d4af37` → Gold accent (ganti dengan warna brand Anda)
-- `#e8e5df` → Text color
+Buka `style.css` dengan text editor (Notepad++, VSCode, Sublime):
 
-Gunakan Find & Replace (Ctrl+H) untuk ganti semua sekaligus.
+1. Tekan `Ctrl + H` (Windows) atau `Cmd + H` (Mac)
+2. Ganti warna-warna berikut:
+
+**Gold Accent** (muncul 18x di file):
+- Find: `#d4af37`
+- Replace: `#YOUR_COLOR` (contoh: `#c77b30` untuk orange gold)
+
+**Background Dark** (muncul puluhan kali):
+- Find: `#0a0a0a`
+- Replace: `#YOUR_COLOR` (contoh: `#1a1a1a` untuk lebih terang)
+
+**Text Color** (muncul beberapa kali):
+- Find: `#e8e5df`
+- Replace: `#YOUR_COLOR` (contoh: `#ffffff` untuk putih bersih)
+
+**Klik Replace All** untuk ganti semua sekaligus!
+
+**Rekomendasi Kombinasi Warna:**
+- Luxury Blue: Background `#0a1628` + Accent `#4a90e2` + Text `#f5f5f5`
+- Rose Gold: Background `#1a0a0a` + Accent `#b76e79` + Text `#f0e5e5`
+- Emerald: Background `#0a1a0f` + Accent `#50c878` + Text `#e8f5e9`
+- Purple Luxury: Background `#0f0a1a` + Accent `#9b59b6` + Text `#f0ecf5`
 
 ### 8. Menambah Social Media Links
 
